@@ -1,0 +1,223 @@
+
+/* ==============================
+   AYURVEDA WEBSITE - MAIN STYLE
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fafdf9;
+    color: #222;
+    font-family: "Noto Sans Kannada", "Tunga", "Arial", sans-serif;
+}
+
+/* Header */
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 40px;
+    background: #ffffff;
+    border-bottom: 3px solid #2e7d32;
+}
+
+.logo-section {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-section img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.header {
+    flex: 1;
+    text-align: left;
+}
+
+.header h1 {
+    margin: 0;
+    color: #155724;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Main area */
+.selection-area {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+.field {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 9px;
+    color: #155724;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    border: 2px solid #81a97f;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+select:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.12);
+}
+
+select:disabled {
+    background: #eeeeee;
+    cursor: not-allowed;
+}
+
+/* Description box */
+.description-box {
+    margin-top: 30px;
+    padding: 28px 32px;
+    background: #ffffff;
+    border: 2px solid #c8d9c7;
+    border-left: 6px solid #2e7d32;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.description-box h2 {
+    margin: 0 0 22px 0;
+    padding-bottom: 10px;
+    color: #8b4513;
+    font-size: 24px;
+    font-weight: 800;
+    border-bottom: 2px solid #d9e7d8;
+}
+
+/* Main description text */
+#description {
+    color: #333333;
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+    font-weight: 600;       /* makes normal passage slightly bold */
+}
+
+/* Chapter title automatically added by JavaScript */
+#description .chapter-title {
+    margin: 0 0 24px 0;
+    padding: 12px 15px;
+    color: #ffffff;
+    background: #2e7d32;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Sanskrit / original verse */
+#description .verse {
+    margin: 17px 0;
+    padding: 0px 18px;
+    color: #7b1e1e;
+    background: #fff8f2;
+    border-left: 5px solid #c47a2c;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 2;
+    text-align: center;
+}
+
+/* Kannada explanation */
+#description .meaning {
+    margin: 0 0 17px 0;
+    color: #263238;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    text-align: justify;
+}
+
+/* Explanation headings such as "ದೋಷಗಳು:-" */
+#description .heading {
+    margin: 22px 0 8px 0;
+    color: #00695c;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.7;
+}
+
+/* Important words / phrases */
+#description .important {
+    color: #b71c1c;
+    font-weight: 900;
+}
+
+/* Numbered / special reference text */
+#description .reference {
+    color: #6a1b9a;
+    font-weight: 800;
+}
+
+/* Horizontal separators */
+#description hr {
+    border: 0;
+    border-top: 2px solid #d7e3d6;
+    margin: 24px 0;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .logo-container {
+        padding: 10px 15px;
+    }
+
+    .logo-section {
+        width: 85px;
+    }
+
+    .logo-section img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .selection-area {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .description-box {
+        padding: 20px;
+    }
+
+    #description {
+        font-size: 17px;
+    }
+
+    #description .verse {
+        font-size: 17px;
+        text-align: center;
+    }
+}
