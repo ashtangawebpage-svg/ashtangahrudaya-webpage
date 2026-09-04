@@ -36,6 +36,9 @@ body {
     height: 90px;
     object-fit: contain;
 }
+.header2 {
+    text-align: center;
+}
 
 .header {
     flex: 1;
