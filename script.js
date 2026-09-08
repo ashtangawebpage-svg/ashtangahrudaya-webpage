@@ -8,6 +8,7 @@ const data = {
         chapters: [
             {
                 name: "ಅಧ್ಯಾಯ 1 - ಆಯುಷ್ಕಾಮೀಯ",
+                pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
 
                 description: `
                     <p> ರಾಗಾದಿರೋಗಾನ್ ಸತತಾನುಷಕ್ತಾನಶೇಷಕಾಯಪ್ರಸೃತಾನಶೇಷಾನ್ | </p>
@@ -223,6 +224,7 @@ const data = {
 
             {
                 name: "ಅಧ್ಯಾಯ 2 - ದಿನಚರ್ಯಾ",
+                pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
                 description: `
                     ದಿನಚರ್ಯೆ ಎಂದರೆ ಪ್ರತಿದಿನ ಅನುಸರಿಸಬೇಕಾದ
                     ಆರೋಗ್ಯಕರ ಜೀವನ ವಿಧಾನ.
@@ -235,6 +237,7 @@ const data = {
 
             {
                 name: "ಅಧ್ಯಾಯ 3 - ಋತುಚರ್ಯಾ",
+                pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
                 description: `
                     ಋತುಚರ್ಯೆ ಎಂದರೆ ಋತುವಿಗೆ ಅನುಗುಣವಾಗಿ
                     ಆಹಾರ ಮತ್ತು ಜೀವನಶೈಲಿಯಲ್ಲಿ ಬದಲಾವಣೆ ಮಾಡುವುದು.
@@ -255,6 +258,7 @@ const data = {
 
             {
                 name: "ಅಧ್ಯಾಯ 1 - ಗರ್ಭಾವಕ್ರಾಂತಿ",
+                pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
                 description: `
                     ಈ ಅಧ್ಯಾಯದಲ್ಲಿ ಗರ್ಭಧಾರಣೆ ಮತ್ತು
                     ಭ್ರೂಣದ ಬೆಳವಣಿಗೆಯ ಕುರಿತು ವಿವರಿಸಲಾಗಿದೆ.
@@ -263,6 +267,7 @@ const data = {
 
             {
                 name: "ಅಧ್ಯಾಯ 2 - ಗರ್ಭವ್ಯಾಪತ್",
+                pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
                 description: `
                     ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ಉಂಟಾಗಬಹುದಾದ ವಿವಿಧ
                     ತೊಂದರೆಗಳ ಕುರಿತು ಈ ಅಧ್ಯಾಯದಲ್ಲಿ ವಿವರಿಸಲಾಗಿದೆ.
@@ -281,6 +286,7 @@ const data = {
 
             {
                 name: "ಅಧ್ಯಾಯ 1 - ಸರ್ವರೋಗ ನಿದಾನ",
+                pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
                 description: `
                     ವಿವಿಧ ರೋಗಗಳ ಕಾರಣಗಳು, ಲಕ್ಷಣಗಳು ಮತ್ತು
                     ರೋಗದ ಬೆಳವಣಿಗೆಯ ಕುರಿತು ಇಲ್ಲಿ ವಿವರಿಸಲಾಗಿದೆ.
@@ -289,6 +295,7 @@ const data = {
 
             {
                 name: "ಅಧ್ಯಾಯ 2 - ರಕ್ತಪಿತ್ತ ನಿದಾನ",
+                pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
                 description: `
                     ರಕ್ತಪಿತ್ತದ ಕಾರಣಗಳು ಮತ್ತು ಲಕ್ಷಣಗಳ ಕುರಿತು
                     ಈ ಅಧ್ಯಾಯದಲ್ಲಿ ವಿವರಿಸಲಾಗಿದೆ.
@@ -308,6 +315,8 @@ const sectionSelect = document.getElementById("sectionSelect");
 const chapterSelect = document.getElementById("chapterSelect");
 
 const description = document.getElementById("description");
+
+const downloadPdf = document.getElementById("downloadPdf");
 
 
 // -----------------------------
@@ -454,6 +463,7 @@ chapterSelect.addEventListener("change", function () {
         description.innerHTML =
             "ಅಧ್ಯಾಯವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ ವಿವರಣೆ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.";
 
+        downloadPdf.style.display = "none";
         return;
     }
 
@@ -463,5 +473,18 @@ chapterSelect.addEventListener("change", function () {
 
 
     description.innerHTML = formatDescription(chapter.description, chapter.name);
+
+    if (chapter.pdf) {
+
+        downloadPdf.href = chapter.pdf;
+        downloadPdf.download = chapter.pdf;
+        downloadPdf.style.display = "inline-block";
+
+    } else {
+
+        downloadPdf.style.display = "none";
+
+    }
+
 
 });
