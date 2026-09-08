@@ -187,6 +187,26 @@ select:disabled {
     margin: 24px 0;
 }
 
+.download-section {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.download-btn {
+    display: none;
+    background: #198754;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+    .download-btn:hover {
+        background: #146c43;
+    }
+
 /* Mobile */
 @media (max-width: 700px) {
     .logo-container {
