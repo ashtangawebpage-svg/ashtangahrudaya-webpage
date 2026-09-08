@@ -24,37 +24,46 @@
         <h1> ಅಷ್ಟಾಂಗ ಹೃದಯ ಕನ್ನಡೀಕರಣ </h̆̆1>
     </div>
 
-        <section class="selection-area">
+    <section class="selection-area">
 
-            <div class="field">
-                <label for="sectionSelect">ವಿಭಾಗ ಆಯ್ಕೆಮಾಡಿ</label>
+        <div class="field">
+            <label for="sectionSelect">ವಿಭಾಗ ಆಯ್ಕೆಮಾಡಿ</label>
 
-                <select id="sectionSelect">
-                    <option value="">-- ವಿಭಾಗ ಆಯ್ಕೆಮಾಡಿ --</option>
-                </select>
+            <select id="sectionSelect">
+                <option value="">-- ವಿಭಾಗ ಆಯ್ಕೆಮಾಡಿ --</option>
+            </select>
+        </div>
+
+
+        <div class="field">
+            <label for="chapterSelect">ಅಧ್ಯಾಯ ಆಯ್ಕೆಮಾಡಿ</label>
+
+            <select id="chapterSelect" disabled>
+                <option value="">-- ಅಧ್ಯಾಯ ಆಯ್ಕೆಮಾಡಿ --</option>
+            </select>
+        </div>
+
+
+        <div class="description-box">
+
+            <h2>ವಿವರಣೆ</h2>
+
+            <div id="description">
+                ವಿಭಾಗವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ ವಿವರಣೆ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.
             </div>
 
+        </div>
+        <div class="download-section">
+            <a id="downloadPdf"
+               href="#"
+               download
+               class="download-btn"
+               style="display: none;">
+                📥 ಅಧ್ಯಾಯ PDF Download ಮಾಡಿ
+            </a>
+        </div>
 
-            <div class="field">
-                <label for="chapterSelect">ಅಧ್ಯಾಯ ಆಯ್ಕೆಮಾಡಿ</label>
-
-                <select id="chapterSelect" disabled>
-                    <option value="">-- ಅಧ್ಯಾಯ ಆಯ್ಕೆಮಾಡಿ --</option>
-                </select>
-            </div>
-
-
-            <div class="description-box">
-
-                <h2>ವಿವರಣೆ</h2>
-
-                <div id="description">
-                    ವಿಭಾಗವನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ ವಿವರಣೆ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.
-                </div>
-
-            </div>
-
-        </section>
+    </section>
 
 
         <script src="script.js"></script>
