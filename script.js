@@ -9,7 +9,7 @@ const data = {
             {
                 name: "ಅಧ್ಯಾಯ 1 - ಆಯುಷ್ಕಾಮೀಯ",
                 pdf: "೧._ಆಯುಷ್ಕಾಮೀಯಾಧ್ಯಾಯಃ[2].pdf",
-
+                article: "https://vedotpatti.in/samhita/Vag/ehrudayam/?mod=read",
                 description: `
                     <p> ರಾಗಾದಿರೋಗಾನ್ ಸತತಾನುಷಕ್ತಾನಶೇಷಕಾಯಪ್ರಸೃತಾನಶೇಷಾನ್ | </p>
                     <p> ಔತ್ಸುಕ್ಯಮೋಹಾರತಿದಾಞ್ಜಘಾನ ಯೋಽಪೂರ್ವವೈದ್ಯಾಯ ನಮೋಸ್ತು ತಸ್ಮೈ |೧| </p>
@@ -486,5 +486,10 @@ chapterSelect.addEventListener("change", function () {
 
     }
 
-
+    document.getElementById("articleLink").innerHTML = `
+    <p><strong>Related Article:</strong></p>
+    <a href="${chapter.article}" target="_blank">
+        ${chapter.article}
+    </a>
+`;
 });
